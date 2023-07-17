@@ -17,5 +17,8 @@ basic.forever(function () {
     if (y < 10) {
         basic.showArrow(ArrowNames.South)
     }
+    if (x > 400 && x < 600 && (y > 400 && y < 600)) {
+        basic.clearScreen()
+    }
     basic.pause(200)
 })
